@@ -117,7 +117,7 @@ const ChatArea = ({ selectedGroup, socket, setSelectedGroup }) => {
     try {
       const token = currentUser.token;
       const { data } = await axios.post(
-        `${apiURL}/messages`,
+        `${apiURL}/api/messages`,
         {
           content: newMessage,
           groupId: selectedGroup?._id,
